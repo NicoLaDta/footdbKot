@@ -9,7 +9,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 
 class UpcomingPresenter (
     private val view: UpcomingMatchView,
@@ -23,8 +22,9 @@ class UpcomingPresenter (
                 .doRequest(ApiRepository.TheSportDBApi.getUpcomingMatch(idLeague)).await(),
                 MatchResponse::class.java
             )
-
+            if(data.matchResponse != null){
                 view.showUpcomingMatch(data.matchResponse)
+            }
 
         }
 

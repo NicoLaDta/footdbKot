@@ -7,28 +7,28 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Standings(
 
-    @SerializedName("name")
+    @SerializedName("strTeam")
     val name: String? = null,
 
-    @SerializedName("teamId")
+    @SerializedName("intRank")
     val teamId: String? = null,
 
-    @SerializedName("played")
+    @SerializedName("intPlayed")
     val played: String? = null,
 
-    @SerializedName("goalsfor")
+    @SerializedName("intGoalsFor")
     val goalsFor: Int? = null,
 
-    @SerializedName("win")
+    @SerializedName("intWin")
     val win: Int? = null,
 
-    @SerializedName("draw")
+    @SerializedName("intDraw")
     val draw: Int? = null,
 
-    @SerializedName("loss")
+    @SerializedName("intLoss")
     val loss: Int? = null,
 
-    @SerializedName("total")
+    @SerializedName("intPoints")
     val total: Int? = null
 ): Parcelable
 

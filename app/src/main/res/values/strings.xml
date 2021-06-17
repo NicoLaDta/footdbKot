@@ -11,6 +11,7 @@
         <item>Protugeuese Premiera Liga</item>
         <item>Scotish Premier League</item>
         <item>English League 1</item>
+        <item>UEFA Euro 2020</item>
     </string-array>
 
     <array name="liga_img">
@@ -21,6 +22,7 @@
         <item>@drawable/spanish_la_liga</item>
         <item>@drawable/portugeuese_premiera_liga</item>
         <item>@drawable/scotish_premier_league</item>
+        <item>@drawable/english_league_1</item>
         <item>@drawable/english_league_1</item>
     </array>
 
@@ -33,6 +35,7 @@
         <item>4344</item>
         <item>4330</item>
         <item>4396</item>
+        <item>4502</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->

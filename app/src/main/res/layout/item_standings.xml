@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            ImageView
+            <!--<ImageView
                 android:id="@+id/imgStandings"
                 android:layout_width="0dp"
                 android:layout_height="46dp"
@@ -25,7 +25,21 @@
                 app:layout_constraintHorizontal_bias="0.363"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/fc_barcelona" />
+                app:srcCompat="@drawable/fc_barcelona" />-->
+
+            <TextView
+                android:id="@+id/tvStandingRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvStandingName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvStandingName"
@@ -34,22 +48,50 @@
                 android:layout_marginStart="50dp"
                 android:text="@string/dummy_team"
                 android:textColor="@android:color/white"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.521" />
 
             <TextView
+                android:id="@+id/tvStandingPoints"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="#F0F0F7"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvStandingPointsLabel"
+                app:layout_constraintStart_toEndOf="@+id/tvStandingName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStandingPointsLabel"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="Pts"
+                android:textAlignment="center"
+                android:textColor="#F0F0F7"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/tvStandingPoints"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="16dp"
                 android:text="@string/w"
                 android:textSize="15sp"
                 android:textColor="#F0F0F7"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvStandingName"
+                app:layout_constraintStart_toEndOf="@+id/tvStandingPointsLabel"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SearchTeamActivity"></activity>
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SearchTeamActivity" />
         <activity android:name=".activity.DetailTeamActivity" />
         <activity android:name=".activity.DetailMatchActivity" />
         <activity android:name=".activity.SearchResultActivity" />

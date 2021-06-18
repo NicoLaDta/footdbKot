@@ -163,9 +163,9 @@ class DetailTeamActivity : AppCompatActivity(), DetailTeamView {
 
     private fun setFavorite() {
         if (isFavorite) {
-            menuItem?.getItem(1)?.icon = ContextCompat.getDrawable(this, R.drawable.ic_star_black_24dp)
+            menuItem?.getItem(1)?.icon = ContextCompat.getDrawable(this, R.drawable.sound_black)
         } else {
-            menuItem?.getItem(1)?.icon = ContextCompat.getDrawable(this, R.drawable.ic_star_border_black_24dp)
+            menuItem?.getItem(1)?.icon = ContextCompat.getDrawable(this, R.drawable.sound_border)
         }
     }
     override fun onSupportNavigateUp(): Boolean {

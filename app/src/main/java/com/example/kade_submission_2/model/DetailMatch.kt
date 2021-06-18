@@ -51,7 +51,16 @@ data class DetailMatch(
     val idHomeTeam: String? = null,
 
     @SerializedName("idAwayTeam")
-    val idAwayTeam: String? = null
+    val idAwayTeam: String? = null,
+
+    @SerializedName("strVenue")
+    val strVenue: String? = null,
+
+    @SerializedName("strCountry")
+    val strCountry: String? = null
+
+
+
 
 ): Parcelable
 

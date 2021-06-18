@@ -62,12 +62,14 @@ class DetailMatchActivity : AppCompatActivity(), DetailMatchView, TeamsView {
     }
 
     override fun showDetailMatch(data: List<DetailMatch?>?) {
-        tvFormationHome.text = data?.get(0)?.strHomeGoalDetails
-        tvFormationAway.text = data?.get(0)?.strAwayGoalDetails
+/*        tvFormationHome.text = data?.get(0)?.strHomeGoalDetails
+        tvFormationAway.text = data?.get(0)?.strAwayGoalDetails*/
         tvDetailEvent.text = data?.get(0)?.strEvent
         tvDetailDate.text = data?.get(0)?.dateEvent
         tvScoreDetailAway.text = data?.get(0)?.intAwayScore
         tvHomeGoalDetail.text = data?.get(0)?.intHomeScore
+        tvDetailVenue.text = data?.get(0)?.strVenue
+        tvDetailCountry.text = data?.get(0)?.strCountry
 
         favorite = FavoriteMatch(data?.get(0)?.idEvent,
             data?.get(0)?.strEvent,
@@ -75,7 +77,11 @@ class DetailMatchActivity : AppCompatActivity(), DetailMatchView, TeamsView {
             data?.get(0)?.intAwayScore,
             data?.get(0)?.dateEvent,
             data?.get(0)?.idHomeTeam,
-            data?.get(0)?.idAwayTeam)
+            data?.get(0)?.idAwayTeam,
+            data?.get(0)?.strVenue,
+            data?.get(0)?.strCountry,
+
+        )
     }
 
 

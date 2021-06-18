@@ -17,5 +17,11 @@ data class FavoriteMatch(
 
     val idHomeTeam: String? = null,
 
-    val idAwayTeam: String? = null
+    val idAwayTeam: String? = null,
+
+    val strVenue: String? = null,
+
+    val strCountry: String? = null,
+
+
 ): Parcelable

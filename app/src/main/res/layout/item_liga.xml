@@ -10,7 +10,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginTop="15dp"
     app:strokeWidth="1dp"
-    app:cardBackgroundColor="@color/colorDarkBlue"
+    app:cardBackgroundColor="@color/colorBlue"
     app:strokeColor="@color/colorDarkBlue">
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -143,9 +143,9 @@ class DetailTeamActivity : AppCompatActivity(), DetailTeamView {
                     FavoriteTeamField.STR_STADIUM to favorite.strStadium,
                     FavoriteTeamField.STR_BADGE to favorite.strTeamBadge)
             }
-            Toast.makeText(this, "Added to Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Added to Animation", Toast.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException) {
-            Toast.makeText(this, "Failed to Add Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Failed to Add Animation", Toast.LENGTH_SHORT).show()
         }
     }
 

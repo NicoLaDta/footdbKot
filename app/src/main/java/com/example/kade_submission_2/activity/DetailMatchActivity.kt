@@ -135,9 +135,9 @@ class DetailMatchActivity : AppCompatActivity(), DetailMatchView, TeamsView {
                     FavoriteMatchField.ID_HOME_TEAM to favorite.idHomeTeam,
                     FavoriteMatchField.ID_AWAY_TEAM to favorite.idAwayTeam)
             }
-            Toast.makeText(this, "Added To Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Added To Animation", Toast.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException) {
-            Toast.makeText(this, "Fail Added To Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Fail Added To Animation", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -147,9 +147,9 @@ class DetailMatchActivity : AppCompatActivity(), DetailMatchView, TeamsView {
                 delete(FavoriteMatchField.TABLE_FAVORITE, "(ID_EVENT = {id})",
                     "id" to id)
             }
-            Toast.makeText(this, "Remove To Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Remove To Animation", Toast.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException) {
-            Toast.makeText(this, "Fail Remove To From Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Fail Remove To From Animation", Toast.LENGTH_SHORT).show()
         }
     }
 

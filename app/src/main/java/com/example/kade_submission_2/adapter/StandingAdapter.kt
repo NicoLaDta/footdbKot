@@ -32,6 +32,7 @@ class StandingAdapter(private val items: List<Standings>, private val ctx: Conte
         val tvStandingWin = view.findViewById<TextView>(R.id.tvStandingWin)
         val tvStandingDraw = view.findViewById<TextView>(R.id.tvStandingDraw)
         val tvStandingRank = view.findViewById<TextView>(R.id.tvStandingRank)
+        val tvStandingPoints = view.findViewById<TextView>(R.id.tvStandingPoints)
 
         fun bind(items: Standings) {
 
@@ -40,6 +41,7 @@ class StandingAdapter(private val items: List<Standings>, private val ctx: Conte
             tvStandingWin.text = items.win.toString()
             tvStandingName.text = items.name
             tvStandingRank.text = items.teamId.toString()
+            tvStandingPoints.text = items.total.toString()
 
         }
     }

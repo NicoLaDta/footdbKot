@@ -23,7 +23,7 @@
         <item>@drawable/portugeuese_premiera_liga</item>
         <item>@drawable/scotish_premier_league</item>
         <item>@drawable/english_league_1</item>
-        <item>@drawable/english_league_1</item>
+        <item>@drawable/uefa_euro_2020_logo</item>
     </array>
 
     <string-array name="liga_id">
@@ -46,7 +46,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- dummy string for ui purpose -->
-    <string name="dummy_win">32</string>
+    <string name="dummy_win">32</string>hh
     <string name="dummy_loss">22</string>
     <string name="dummy_draw">0</string>
     <string name="d">D:</string>

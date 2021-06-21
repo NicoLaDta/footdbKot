@@ -6,7 +6,6 @@
     android:layout_width="320dp"
     android:elevation="0dp"
     android:layout_height="100dp"
-    app:cardBackgroundColor="@color/colorBlue"
     app:cardCornerRadius="7dp"
     android:layout_gravity="center"
     android:layout_marginTop="10dp">
@@ -33,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/dummy_team"
-            android:textColor="@android:color/white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imgTeam"
@@ -48,7 +46,6 @@
             android:layout_marginBottom="8dp"
             android:maxLines="3"
             android:text="@string/dummy_desc"
-            android:textColor="@android:color/white"
             android:textSize="12sp"
             android:textAlignment="textStart"
             app:layout_constraintBottom_toBottomOf="parent"

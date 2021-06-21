@@ -6,7 +6,6 @@
         android:orientation="vertical"
         android:layout_width="340dp"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@color/colorLightBlue"
         app:cardCornerRadius="14dp"
         android:layout_marginTop="20dp">
 
@@ -22,7 +21,6 @@
             android:layout_marginTop="8dp"
             android:text="Bungesliga vs English"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +47,6 @@
             android:layout_marginStart="110dp"
             android:layout_marginTop="3dp"
             android:text="1"
-            android:textColor="@android:color/white"
             android:textSize="40sp"
             app:layout_constraintStart_toStartOf="@+id/tvDate"
             app:layout_constraintTop_toBottomOf="@+id/tvEvent" />
@@ -61,7 +58,6 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="110dp"
             android:text="1"
-            android:textColor="@android:color/white"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvEvent" />
